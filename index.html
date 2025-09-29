@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & References - AI Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Research & References</h1>
+        <p>AI-Powered Tourism Platform for Jharkhand</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Foundational Research & Problem Analysis</h2>
+            <p>Our project is rooted in addressing the key challenges and opportunities within Jharkhand's tourism
+                sector. The research focused on understanding the gap between the state's immense potential and its
+                underdeveloped digital tourism infrastructure.</p>
+
+            <h3>Key Findings:</h3>
+            <ul>
+                <li><b>Information Gap:</b> Tourists struggle to find reliable, centralized information on destinations,
+                    accommodations, and local transport.</li>
+                <li><b>Exclusion of Local Communities:</b> Economic benefits from tourism often bypass artisans and
+                    tribal communities due to poor digital integration.</li>
+                <li><b>Lack of Trust & Verification:</b> No standardized system for verifying guides and handicrafts,
+                    leading to inconsistent quality.</li>
+            </ul>
+
+            <h3>References:</h3>
+            <ul>
+                <li><a href="https://jhtourism.gov.in/" target="_blank">Jharkhand Tourism Official Website</a></li>
+                <li><a href="https://data.gov.in/" target="_blank">Open Government Data (OGD) Platform India</a></li>
+                <li>Academic Papers on Eco-Tourism and Sustainable Development</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Technology Stack & Architectural Decisions</h2>
+            <p>Our architecture is designed as a scalable and resilient microservice system, with each component chosen
+                for a specific, strategic purpose.</p>
+
+            <h3>Core Technologies:</h3>
+            <ul>
+                <li><b>Flutter (Mobile App):</b> <a href="https://flutter.dev/" target="_blank">flutter.dev</a></li>
+                <li><b>FastAPI (Python Backend):</b> <a href="https://fastapi.tiangolo.com/"
+                        target="_blank">fastapi.tiangolo.com</a></li>
+                <li><b>Supabase (Database & Storage):</b> <a href="https://supabase.com/"
+                        target="_blank">supabase.com</a></li>
+                <li><b>Google Gemini (AI Model):</b> <a href="https://ai.google.dev/gemini-api"
+                        target="_blank">ai.google.dev/gemini-api</a></li>
+            </ul>
+
+            <h3>Blockchain Technology:</h3>
+            <ul>
+                <li><b>Hyperledger Fabric:</b> <a href="https://hyperledger.org/use/fabric"
+                        target="_blank">hyperledger.org</a></li>
+                <li><b>Node.js Fabric Gateway SDK:</b> <a href="https://hyperledger.github.io/fabric-gateway/"
+                        target="_blank">fabric-gateway docs</a></li>
+            </ul>
+
+            <h3>Scaling & Deployment:</h3>
+            <ul>
+                <li><a href="https://www.docker.com/" target="_blank">Docker</a> & <a href="https://kubernetes.io/"
+                        target="_blank">Kubernetes</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Acknowledgements</h2>
+            <p>This project was made possible by the extensive documentation and open-source contributions from the
+                global developer community. We thank the teams behind Hyperledger, Google Gemini, FastAPI, Flutter, and
+                Supabase for their powerful tools.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Research Reference</p>
+    </footer>
+
+    <!-- Integrated JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Research & References Page Loaded ✅");
+
+            // Smooth scroll for internal links
+            document.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", (e) => {
+                    if (link.getAttribute("href").startsWith("#")) {
+                        e.preventDefault();
+                        document.querySelector(link.getAttribute("href")).scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+
+            // Back to top button
+            const topBtn = document.createElement("button");
+            topBtn.innerText = "⬆ Back to Top";
+            topBtn.id = "backToTop";
+            document.body.appendChild(topBtn);
+
+            // Style button via JS (you can move to CSS if preferred)
+            Object.assign(topBtn.style, {
+                position: "fixed",
+                bottom: "20px",
+                right: "20px",
+                padding: "10px 15px",
+                border: "none",
+                borderRadius: "5px",
+                background: "#1a73e8",
+                color: "white",
+                cursor: "pointer",
+                display: "none",
+                fontSize: "14px",
+                boxShadow: "0 2px 6px rgba(0,0,0,0.2)"
+            });
+
+            // Show/hide button on scroll
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                    topBtn.style.display = "block";
+                } else {
+                    topBtn.style.display = "none";
+                }
+            });
+
+            // Scroll back to top
+            topBtn.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+</body>
+
+</html>
